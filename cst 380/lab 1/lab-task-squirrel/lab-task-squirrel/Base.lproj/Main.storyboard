@@ -196,16 +196,17 @@
                         <outlet property="descriptionLabel" destination="XK8-9k-CuP" id="7J5-NS-A0C"/>
                         <outlet property="mapView" destination="iAe-dV-9ki" id="FFE-oG-DYl"/>
                         <outlet property="titleLabel" destination="7ZS-zZ-Yxg" id="qiA-Cl-hFG"/>
+                        <outlet property="viewPhoto" destination="lZM-Vg-Nc4" id="uRv-gV-SU8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odg-GX-QzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1750.7692307692307" y="13.507109004739336"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="zQg-P8-d9D">
             <objects>
-                <viewController id="6hD-cr-vdR" sceneMemberID="viewController">
+                <viewController id="6hD-cr-vdR" customClass="PhotoViewController" customModule="lab_task_squirrel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pNW-DN-6tT">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,6 +220,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="QJF-9A-IeO"/>
+                    <connections>
+                        <outlet property="photoView" destination="nS5-jF-Qpp" id="Wif-uu-rfM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LX-uw-CFw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -325,10 +329,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

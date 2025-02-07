@@ -18,6 +18,7 @@
 		CB9D9ED1292483BC00F8F51B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D9ED0292483BC00F8F51B /* Task.swift */; };
 		CB9D9ED4292488B000F8F51B /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D9ED3292488B000F8F51B /* TaskDetailViewController.swift */; };
 		CB9D9EDA292489E000F8F51B /* TaskComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D9ED9292489E000F8F51B /* TaskComposeViewController.swift */; };
+		E4C8095F2D55DFD6007C4AB2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C8095E2D55DFCA007C4AB2 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CB9D9ED0292483BC00F8F51B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		CB9D9ED3292488B000F8F51B /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		CB9D9ED9292489E000F8F51B /* TaskComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskComposeViewController.swift; path = ../TaskComposeViewController.swift; sourceTree = "<group>"; };
+		E4C8095E2D55DFCA007C4AB2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				CB602BAE29247700006C6727 /* Task List */,
 				CB9D9ED82924896400F8F51B /* Task Compose */,
 				CB9D9ED5292488BC00F8F51B /* Task Detail */,
+				E4C8095B2D55DF66007C4AB2 /* Photo View */,
 				CB9D9ED2292483C400F8F51B /* Models */,
 				CB602B9E29247359006C6727 /* Main.storyboard */,
 				CB602BA32924735C006C6727 /* LaunchScreen.storyboard */,
@@ -112,6 +115,14 @@
 				CB9D9ED9292489E000F8F51B /* TaskComposeViewController.swift */,
 			);
 			path = "Task Compose";
+			sourceTree = "<group>";
+		};
+		E4C8095B2D55DF66007C4AB2 /* Photo View */ = {
+			isa = PBXGroup;
+			children = (
+				E4C8095E2D55DFCA007C4AB2 /* PhotoViewController.swift */,
+			);
+			path = "Photo View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 				CB602B9D29247359006C6727 /* TaskListViewController.swift in Sources */,
 				CB9D9EDA292489E000F8F51B /* TaskComposeViewController.swift in Sources */,
 				CB57503A2929E62C00890962 /* TaskAnnotationView.swift in Sources */,
+				E4C8095F2D55DFD6007C4AB2 /* PhotoViewController.swift in Sources */,
 				CB602B9929247359006C6727 /* AppDelegate.swift in Sources */,
 				CB602B9B29247359006C6727 /* SceneDelegate.swift in Sources */,
 				CB9D9ED1292483BC00F8F51B /* Task.swift in Sources */,

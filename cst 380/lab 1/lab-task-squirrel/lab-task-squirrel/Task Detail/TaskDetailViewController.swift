@@ -20,6 +20,7 @@ class TaskDetailViewController: UIViewController {
 
     // MapView outlet
     @IBOutlet private weak var mapView: MKMapView!
+    @IBOutlet weak var viewPhoto: UIButton!
 
     var task: Task!
 
@@ -38,7 +39,6 @@ class TaskDetailViewController: UIViewController {
 
         // UI Candy
         mapView.layer.cornerRadius = 12
-
 
         updateUI()
         updateMapView()
@@ -61,6 +61,9 @@ class TaskDetailViewController: UIViewController {
 
         mapView.isHidden = !task.isComplete
         attachPhotoButton.isHidden = task.isComplete
+        
+        // sets the viewPhoto button isHidden option to the opposite of the completion of the task
+        viewPhoto.isHidden = !task.isComplete
     }
 
     @IBAction func didTapAttachPhotoButton(_ sender: Any) {
@@ -137,6 +140,16 @@ class TaskDetailViewController: UIViewController {
         annotation.coordinate = coordinate
         mapView.addAnnotation(annotation)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+            // Segue to Detail View Controller
+         if segue.identifier == "seego" {
+             if let photoViewController = segue.destination as? PhotoViewController {
+                 photoViewController.task = task
+              }
+          }
+      }
 }
 
 // TODO: Conform to PHPickerViewControllerDelegate + implement required method(s)
