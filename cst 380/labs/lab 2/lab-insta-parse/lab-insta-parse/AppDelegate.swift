@@ -8,6 +8,7 @@
 import ParseSwift
 import UIKit
 
+
 // TODO: Pt 1 - Import Parse Swift
 
 @main
@@ -23,9 +24,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // TODO: Pt 1: - Instantiate and save a test parse object to your server
         // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/1%20-%20Your%20first%20Object.xcplaygroundpage/Contents.swift#L121
         
-        ParseSwift.initialize(applicationId: "YOUR_PARSE_SERVER_APPLICATION-KEY",
-                              clientKey: "YOUR_PARSE_SERVER_CLIENT_KEY",
-                              serverURL: URL(string: "YOUR_PARSE_SERVER_API_ADDRESS")!)
+        ParseSwift.initialize(applicationId: "mVsD1psYJNKpD3YMQgQ1iPmEVNGyPq9mawFhpqpj",
+          clientKey: "6ewb8ggtZhpomhsXVA8y7eyP8Ol3HL3waFi3B0WV",
+          serverURL: URL(string: "https://parseapi.back4app.com")!)
+        
+        // Instantiate the test parse object
+        var score = GameScore()
+        score.playerName = "Kingsley"
+        score.points = 13
+
+        // Save to your server asynchronously (preferred way) - Performs work on background queue and returns to specified callbackQueue.
+        // If no callbackQueue is specified it returns to main queue.
+//        score.save { result in
+//            switch result {
+//            case .success(let savedScore):
+//                print("✅ Parse Object SAVED!: Player: \(String(describing: savedScore.playerName)), Score: \(String(describing: savedScore.points))")
+//            case .failure(let error):
+//                assertionFailure("Error saving: \(error)")
+//            }
+//        }
 
         return true
     }
@@ -48,4 +65,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // TODO: Pt 1 - Create Test Parse Object
 // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/1%20-%20Your%20first%20Object.xcplaygroundpage/Contents.swift#L33
 
+// Create your own value type `ParseObject`.
+struct GameScore: ParseObject {
+    // These are required by ParseObject
+    var objectId: String?
+    var createdAt: Date?
+    var updatedAt: Date?
+    var ACL: ParseACL?
+    var originalData: Data?
 
+    // Your own custom properties.
+    // All custom properties must be optional.
+    var playerName: String?
+    var points: Int?
+}
+
+// Sample Usage
+//
+// var score = GameScore()
+// score.playerName = "Kingsley"
+// score.points = 13
+
+// OR Implement a custom initializer (OPTIONAL i.e. NOT REQUIRED)
+// It's recommended to place custom initializers in an extension
+// to preserve the memberwise initializer.
+extension GameScore {
+
+    // Use the init to set your custom properties
+    // NOTE: Properties in custom init are NOT required to be optional
+    init(playerName: String, points: Int) {
+        self.playerName = playerName
+        self.points = points
+    }
+}
+
+// Sample Usage
+//
+// let score = GameScore(playerName: "Kingsley", points: 13)

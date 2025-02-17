@@ -23,7 +23,6 @@
 		CB7896F12936045A00635932 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7896F02936045A00635932 /* Post.swift */; };
 		CB7896F429361CC600635932 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CB7896F329361CC600635932 /* AlamofireImage */; };
 		CBCDFAFE291144DA001F1CF1 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCDFAFD291144DA001F1CF1 /* PostViewController.swift */; };
-		E4FA26362D61819E004CE337 /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA26352D618193004CE337 /* GameScore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		CB7896EE2935DC4E00635932 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CB7896F02936045A00635932 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CBCDFAFD291144DA001F1CF1 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		E4FA26352D618193004CE337 /* GameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +137,6 @@
 		CB7896ED2935DB4100635932 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E4FA26352D618193004CE337 /* GameScore.swift */,
 				CB7896EE2935DC4E00635932 /* User.swift */,
 				CB7896F02936045A00635932 /* Post.swift */,
 			);
@@ -227,7 +224,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB13E51F2913A16C008F45BB /* PostCell.swift in Sources */,
-				E4FA26362D61819E004CE337 /* GameScore.swift in Sources */,
 				CBCDFAFE291144DA001F1CF1 /* PostViewController.swift in Sources */,
 				CB73D399290E3B4A00C12538 /* LoginViewController.swift in Sources */,
 				CB73D395290E3B4A00C12538 /* AppDelegate.swift in Sources */,
